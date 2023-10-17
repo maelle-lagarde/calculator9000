@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Pixelify+Sans:wght@600&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255,142,233,1) 0%, rgba(252,157,103,1) 50%, rgba(252,255,148,1) 100%);
+}
+
+body {
+  font-size: 22px;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+/* CALCULATOR */
+
+h1 {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+.app {
+  height: auto;
+  background-color: black;
+  padding: 10px 50px 50px 50px;
+  width: 30%;
+  margin: auto;
+  border-radius: 15px;
+  border: 2px solid transparent;
+}
+
+.buttons-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.number-button {
+  margin: 5px;
+  padding: 15px;
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #1E47DC;
+  color: white;
+}
+
+.number-button:hover {
+  border-color: #070d82;
+}
+
+.operator-button {
+  padding: 15px;
+  margin: 5px;
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #FF7809;
+  color: white;
+}
+
+.operator-button:hover {
+  border-color: #FFC20D;
+}
+
+button.equal-button {
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: rgb(45, 45, 45);
+  color: white;
+  grid-column: span 1;
+  width: 100%;
+}
+
+.equal-button:hover {
+  border-color: #c59afe;
+}
+
+.reset-button {
+  padding: 15px;
+  margin: 5px;
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+
+.reset-button:hover {
+  border-color: #c59afe;
+}
+
+.result, .current-operation {
+  font-size: 30px;
+  color: white;
+}
+
+.display {
+  padding: 20px;
+  background-color: pink;
+  text-align: right;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
