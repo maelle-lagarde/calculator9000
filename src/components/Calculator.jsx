@@ -20,7 +20,8 @@ function Calculator() {
 
     function handleEqualClick() {
         try {
-            setResult(eval(currentOperation));
+            const expressionEvaluate = result ? result +currentOperation : currentOperation;
+            setResult(eval(expressionEvaluate));
             setCurrentOperation('');
         } catch(e) {
             setResult('Error');
@@ -47,7 +48,7 @@ function Calculator() {
                 {['4','5','6'].map(num => (
                     <NumberButton key={num} value={num} onClick={handleNumberClick} />
                 ))}
-                {['+'].map(op => (
+                {['*'].map(op => (
                     <OperatorButton key={op} value={op} onClick={handleOperatorClick} />
                 ))}
             </div>
@@ -65,7 +66,7 @@ function Calculator() {
                     <NumberButton key={num} value={num} onClick={handleNumberClick} />
                     ))}
                     <ResetButton onClick={handleResetClick} />
-                    {['*'].map(op => (
+                    {['+'].map(op => (
                     <OperatorButton key={op} value={op} onClick={handleOperatorClick} />
                     ))}
             </div>

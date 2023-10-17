@@ -21,12 +21,12 @@ body {
 h1 {
   font-family: 'Pixelify Sans', sans-serif;
   font-size: 35px;
-  color: white;
+  color: #A19BE2;
 }
 
 .app {
   height: auto;
-  background-color: black;
+  background-color: #19192E;
   padding: 10px 50px 50px 50px;
   width: 30%;
   margin: auto;
@@ -48,12 +48,13 @@ h1 {
   font-family: 'Kanit', sans-serif;
   border-radius: 5px;
   border: 1px solid transparent;
-  background-color: #1E47DC;
+  background-color: #EF9C9D;
+  /* background-color: #1E47DC; */
   color: white;
 }
 
 .number-button:hover {
-  border-color: #070d82;
+  border-color: #c59afe;
 }
 
 .operator-button {
@@ -63,12 +64,13 @@ h1 {
   font-family: 'Kanit', sans-serif;
   border-radius: 5px;
   border: 1px solid transparent;
-  background-color: #FF7809;
+  /* background-color: #FF7809; */
+  background-color: #F5C483;
   color: white;
 }
 
 .operator-button:hover {
-  border-color: #FFC20D;
+  border-color: #c59afe;
 }
 
 button.equal-button {
@@ -109,9 +111,10 @@ button.equal-button {
 }
 
 .display {
-  padding: 20px;
-  background-color: pink;
+  padding: 15px;
+  background-color: #A19BE2;
   text-align: right;
   border: 1px solid transparent;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
