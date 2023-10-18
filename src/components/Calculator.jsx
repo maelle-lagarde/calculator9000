@@ -5,6 +5,7 @@ import EqualButton from './EqualButton';
 import NumberButton from './NumberButton';
 import OperatorButton from './OperatorButton';
 import ResetButton from "./ResetButton";
+import ItSOverNineThousand from "./ItsOverNineThousand";
 
 function Calculator() {
     const [currentOperation, setCurrentOperation] = useState('');
@@ -35,6 +36,7 @@ function Calculator() {
 
     return (
         <div className="calculator">
+            <ItSOverNineThousand value={result} />
             <BeautifulScreen currentOperation={currentOperation} result={result} />
             <div className="buttons-row">
                 {['1','2','3'].map(num => (
